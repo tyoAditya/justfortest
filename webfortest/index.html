@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">    
+<HEAD>
+<SCRIPT SRC="http://code.jquery.com/jquery-1.7.2.js"></SCRIPT>
+<script>
+<!--//Get the data using ajax//-->
+$.get(
+    "/getinfo.php/1", {},
+    function(data) { $('.InfoDiv').html('Title:'+data.Title+'<br/>Address:'+data.Address+'<br>Bedroom:'+data.Bedroom+'<br>Livingroom:'+data.Livingroom+'<br>Diningroom:'+data.Diningroom); }
+);
+</script>
+</HEAD>
+<BODY>
+<H1><FONT FACE="verdana" COLOR="green">Welcome</FONT></H1>
+<CENTER><DIV CLASS="InfoDiv"></DIV></CENTER>
+</BODY>
+<DIV ID="fb-root"></DIV>
+<SCRIPT></SCRIPT>
+</HTML>
+
+
+
