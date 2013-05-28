@@ -2,9 +2,9 @@
 
 class FizzAndBuzz
 {
-	public static function run($loopUntilNumber)
+	public static function run($fromNum, $loopUntilNumber)
 	{
-		for($x=1; $x<=$loopUntilNumber; $x++){
+		for($x=$fromNum; $x<=$loopUntilNumber; $x++){
 			$t = 0;
 			if ($x % 3 == 0){
 				echo "Fizz" ; $t = 1;
@@ -20,4 +20,4 @@ class FizzAndBuzz
 	}
 }
 
-FizzAndBuzz::run(20);
+FizzAndBuzz::run(12,20);
